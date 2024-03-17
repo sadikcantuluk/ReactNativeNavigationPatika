@@ -1,10 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Button, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const SecondScreen = () => {
+const SecondScreen = (props) => {
+    const handlePress = () => {
+        props.navigation.goBack("First");
+      };
   return (
     <View>
       <Text>Second Screen Hello</Text>
+      <Button title='First Geri Dön' onPress={handlePress}/>
     </View>
   )
 }
