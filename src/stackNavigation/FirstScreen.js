@@ -3,7 +3,8 @@ import React from "react";
 
 const FirstScreen = (props) => {
   const handlePress = () => {
-    props.navigation.navigate("Second");
+    //SAYFA YÖNLENDİRME VE YANINDA VERİ GÖNDERME.
+    props.navigation.navigate("Second",{userName:"MUSTAFA KEMAL"});
   };
 
   return (
