@@ -7,7 +7,7 @@ const SecondScreen = (props) => {
 
     // const userName = props.route.params.userName;
               //VEYA
-    const {userName} = props.route.params;
+    const {userName} = props.route.params; //params'dan userName objesini direkt çekme.
 
     const handlePress = () => {
         props.navigation.goBack("First");
@@ -24,3 +24,9 @@ const SecondScreen = (props) => {
 export default SecondScreen
 
 const styles = StyleSheet.create({})
+
+
+
+
+
+
