@@ -27,7 +27,13 @@ export default function RouterDrawer() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="DrawerNavigation" component={DrawerNavigation} />
+        <Stack.Screen
+          name="DrawerNavigation"
+          component={DrawerNavigation}
+          options={{
+            headerShown: false,
+          }}
+        />
         <Stack.Screen name="MemberDetail" component={MemberDetail} />
         <Stack.Screen name="MemberUpdate" component={MemberUpdate} />
         <Stack.Screen name="ProfileEdit" component={ProfileEdit} />
