@@ -8,7 +8,7 @@ import MemberResult from "./MemberResult";
 
 const Stack = createNativeStackNavigator();
 
-const Routing = () => {
+const StackRouting = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{
@@ -22,6 +22,6 @@ const Routing = () => {
   );
 };
 
-export default Routing;
+export default StackRouting;
 
 const styles = StyleSheet.create({});
